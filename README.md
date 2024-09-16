@@ -2,10 +2,10 @@
 
 This notebook performs a comprehensive Profit and Loss (P&L) analysis using financial data from a Xero Demo Company dataset. It leverages Google BigQuery for data retrieval and Google Vertex AI for generating insightful analysis using natural language processing.
 
-## Example extended report generated from standard Xero P&L Report
+Example extended report generated from standard Xero P&L Report
 <img src="img/report_analysis.png">
 
-## Example report narrative and analysis from standard Xero P&L Report
+Example report narrative and analysis from standard Xero P&L Report
 <img src="img/report_commentary.png">
 
 ## Table of Contents
