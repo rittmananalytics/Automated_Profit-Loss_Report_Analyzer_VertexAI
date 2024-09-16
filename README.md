@@ -8,19 +8,6 @@ This notebook performs a comprehensive Profit and Loss (P&L) analysis using fina
 ### Example report narrative and analysis from standard Xero P&L Report
 <img src="img/report_commentary.png">
 
-## Table of Contents
-
-1. [Overview](#overview)
-2. [Prerequisites](#prerequisites)
-3. [Setup](#setup)
-4. [Data Source](#data-source)
-5. [Key Components](#key-components)
-6. [Gen AI Integration](#gen-ai-integration)
-7. [Data Processing](#data-processing)
-8. [Report Generation](#report-generation)
-9. [Output](#output)
-10. [Customization](#customization)
-
 ## Overview
 
 This notebook automates the process of generating a detailed P&L report by:
@@ -30,6 +17,61 @@ This notebook automates the process of generating a detailed P&L report by:
 4. Producing a comprehensive HTML report
 
 <img src="img/transformation_flow.png">
+
+## P&L Analysis Process
+
+The notebook performs a detailed analysis of the Profit and Loss (P&L) data through several steps before leveraging the LLM for insights. Here's an overview of the analysis process:
+
+### 1. Account Category Summarization
+
+- The P&L data is first summarized at the account category level (e.g., Revenue, Cost of Delivery, Overheads).
+- This provides a high-level view of the company's financial performance.
+
+### 2. Period-on-Period Changes
+
+- The notebook calculates changes between different time periods:
+  - Month-over-Month (MoM)
+  - Year-to-Date (YTD) vs. Previous Year-to-Date
+- These calculations highlight overall trends and significant shifts in financial performance.
+
+### 3. Account Group Breakdown
+
+- Within each account category, the data is further broken down by account groups.
+- This more granular view helps identify which specific areas are driving changes in the broader categories.
+
+### 4. Account Group Trend Analysis
+
+- The notebook analyzes trends within account groups over time.
+- It identifies groups with significant growth or decline, which may require further investigation.
+
+### 5. Significant Transaction Identification
+
+- For account groups showing significant period-on-period changes, the notebook identifies individual transactions that are primarily responsible for these changes.
+- This step helps pinpoint the root causes of major financial shifts.
+
+### 6. Data Preparation for LLM Analysis
+
+- All the above calculations and findings are structured into a format suitable for LLM processing.
+- This includes:
+  - Overall financial summaries
+  - Detailed breakdowns of significant changes
+  - Lists of notable transactions and their impacts
+
+### 7. LLM Analysis and Commentary
+
+- The structured data is passed to the Vertex AI model via a carefully constructed prompt.
+- The LLM then generates insights, including:
+  - Summary of overall financial performance
+  - Commentary on significant changes and their potential causes
+  - Identification of trends and their possible implications
+  - Recommendations based on the financial data
+
+### 8. Report Generation
+
+- The LLM's output is combined with the structured financial data and any generated visualizations.
+- This comprehensive information is formatted into an HTML report for easy reading and sharing.
+
+This multi-step analysis process ensures that the LLM has access to thoroughly processed and contextualized financial data, enabling it to provide more accurate, relevant, and insightful commentary on the company's financial performance.
 
 ## Prerequisites
 
