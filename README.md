@@ -20,7 +20,7 @@ This notebook automates the process of generating a detailed P&L report by:
 
 ## P&L Analysis Process
 
-The notebook performs a detailed analysis of the Profit and Loss (P&L) data through several steps before leveraging the LLM for insights. Here's an overview of the analysis process:
+The notebook performs a detailed analysis of the Profit and Loss (P&L) data through several steps before leveraging the LLM for insights.
 
 ### 1. Account Category Summarization
 
